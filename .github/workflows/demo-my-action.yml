@@ -6,6 +6,6 @@ on:
 jobs:
   run-action:
     name: 'run the action'
-    uses: actions/hello-world-action@main
+    uses: actions/setup-node@v4.0.0
     with:
         who-to-greet: ${{ inputs.who-to-greet }}
