@@ -1,0 +1,13 @@
+name: 'Test Action Workflow'
+on: 
+  push:
+    branches: [main]
+    paths: [action.yml]
+
+        
+jobs:
+  run-action:
+    name: 'run the action'
+    uses: actions/action@main
+    with:
+        who-to-greet: ${{ inputs.who-to-greet }}
